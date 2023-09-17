@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/module/news_anchor/widgets/menu_button.dart';
+
+import '../../widgets/input_widget.dart';
+import '../../widgets/menu_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,7 +16,8 @@ class _HomePageState extends State<HomePage> {
     return const Column(
       children: [
         Text('Sample Component'),
-        MenuButton(),
+        MenuButton('ic_notif.png'),
+        InputWidget(title: 'Placeholder', hint: 'Placeholder',),
       ],
     );
   }
