@@ -39,6 +39,11 @@ flutter:
     - images/news/ic_email_border.png
     - images/news/ic_google_border.png
     - images/news/ic_twitter_border.png
+    - images/news/ic_delete.png
+    - images/news/ic_left.png
+    - images/news/ic_right.png
+    - images/news/ic_notif.png
+    - images/news/ic_notif_alert.png
 
   # example:
   # fonts:
