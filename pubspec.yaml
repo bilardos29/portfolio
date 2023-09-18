@@ -46,6 +46,9 @@ flutter:
     - images/news/ic_notif_alert.png
     - images/news/ic_eye_show.png
     - images/news/ic_eye_hide.png
+    - images/news/ic_sample.png
+    - images/news/ic_sample2.jpg
+    - images/news/ic_sample3.jpg
 
   # example:
   # fonts:
