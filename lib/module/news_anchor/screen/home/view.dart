@@ -20,12 +20,15 @@ class _HomePageState extends State<HomePage> {
             physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (context, idx) {
               StoryModel item = dummyData[idx];
-              return StoryWidget(
-                  image: item.image,
-                  description: item.description!,
-                  author: item.author!,
-                  tag: item.tag!,
-                  timeline: item.timeline!);
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                child: StoryWidget(
+                    image: item.image,
+                    description: item.description!,
+                    author: item.author!,
+                    tag: item.tag!,
+                    timeline: item.timeline!),
+              );
             })
       ],
     );

@@ -13,6 +13,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +50,7 @@ flutter:
     - images/news/ic_sample.png
     - images/news/ic_sample2.jpg
     - images/news/ic_sample3.jpg
+    - images/news/ic_logo.png
 
   # example:
   # fonts:
