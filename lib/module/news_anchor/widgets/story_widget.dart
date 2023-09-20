@@ -40,51 +40,53 @@ class StoryWidget extends StatelessWidget {
                 ),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(description,
-                                maxLines: 4,
-                                overflow: TextOverflow.fade,
-                                style: FontUtils.h2Bold),
-                            const SizedBox(height: 6),
-                            Text(
-                              'By $author',
-                              style: FontUtils.h3,
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  tag,
-                                  style: FontUtils.h3Bold,
-                                ),
-                                const SizedBox(width: 8),
-                                Text(
-                                  '• $timeline',
-                                  style: FontUtils.h3,
-                                ),
-                              ],
-                            ),
-                            InkWell(
-                              onTap: onMore,
-                              child: const Padding(
-                                padding: EdgeInsets.only(right: 12),
-                                child: Icon(Icons.more_horiz),
+                  child: SizedBox(
+                    height: 120,
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(description,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.fade,
+                                  style: FontUtils.h2Bold),
+                              const SizedBox(height: 6),
+                              Text(
+                                'By $author',
+                                style: FontUtils.h3,
                               ),
-                            ),
-                          ],
-                        ),
-                      ]),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    tag,
+                                    style: FontUtils.h3Bold,
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    '• $timeline',
+                                    style: FontUtils.h3,
+                                  ),
+                                ],
+                              ),
+                              InkWell(
+                                onTap: onMore,
+                                child: const Padding(
+                                  padding: EdgeInsets.only(right: 12),
+                                  child: Icon(Icons.more_horiz),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ]),
+                  ),
                 )
               ]),
           const SizedBox(height: 12),
